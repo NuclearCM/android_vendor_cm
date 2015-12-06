@@ -57,6 +57,32 @@ PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/bin/blacklist:system/addon.d/blacklist
 endif
 
+# Camera Next
+PRODUCT_COPY_FILES += \
+	vendor/cm/prebuilt/common/addon.d/90-CamSettings.sh:system/addon.d/90-CamSettings.sh \
+	vendor/cm/prebuilt/common/app/CameraNextMod.apk:system/priv-app/CameraNextMod.apk \
+	vendor/cm/prebuilt/common/etc/media_profiles.xml:system/vendor/etc/media_profiles.xml \
+	vendor/cm/prebuilt/common/lib/libjni_mosaic.so:system/lib/libjni_mosaic.so 
+
+
+# MaxAudio
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/common/addon.d/90-Maxxaudio.sh:system/addon.d/90-Maxxaudio.sh \
+    vendor/cm/prebuilt/common/etc/waves/default.mps:system/etc/waves/default.mps \
+    vendor/cm/prebuilt/common/app/MaxxAudioFX.apk:system/priv-app/MaxxAudioFX.apk \
+    vendor/cm/prebuilt/common/etc/audio_effects.conf:system/vendor/etc/audio_effects.conf \
+    vendor/cm/prebuilt/common/lib/libMA3-processcode-Qualcomm.so:system/vendor/lib/libMA3-processcode-Qualcomm.so \
+    vendor/cm/prebuilt/common/lib/libMA3-processcode-Coretex_A9.so:system/vendor/lib/libMA3-processcode-Coretex_A9.so \
+    vendor/cm/prebuilt/common/lib/soundfx/libmaxxeffect-cembedded.so:system/vendor/lib/soundfx/libmaxxeffect-cembedded.so \
+    vendor/cm/prebuilt/common/lib/soundfx/libqcbassboost.so:system/vendor/lib/soundfx/libqcbassboost.so \
+    vendor/cm/prebuilt/common/lib/soundfx/libqcreverb.so:system/vendor/lib/soundfx/libqcreverb.so \
+    vendor/cm/prebuilt/common/lib/soundfx/libqcvirt.so:system/vendor/lib/soundfx/libqcvirt.so 
+
+
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/common/lib/bluetooth.default.so:system/lib/hw/bluetooth.default.so \
+    vendor/cm/prebuilt/common/app/NuclearWallpaper.apk:system/app/NuclearWallpaper.apk
+
 # Signature compatibility validation
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/bin/otasigcheck.sh:install/bin/otasigcheck.sh
@@ -114,12 +140,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Launcher3 \
     Trebuchet \
-    AudioFX \
-    CMWallpapers \
     CMFileManager \
-    Eleven \
     LockClock \
-    CMAccount \
     CMSettingsProvider \
     ExactCalculator
 
@@ -265,8 +287,8 @@ endif
 
 # NuclearVersion
 ROM_VERSION = 6.0
-ROM_VERSION_STATUS = alpha
-ROM_VERSION_MAINTENANCE = 1.5
+ROM_VERSION_STATUS = OFFICIAL
+ROM_VERSION_MAINTENANCE = 1.0
 ROM_POSTFIX := $(shell date +"%Y%m%d-%H%M")
 
 NUCLEAR_VERSION := NucleaROM-V$(ROM_VERSION_MAINTENANCE)-$(ROM_VERSION_STATUS)[$(ROM_VERSION)]-$(ROM_POSTFIX)
