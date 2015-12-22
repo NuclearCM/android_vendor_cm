@@ -1,3 +1,6 @@
+# Inherit build optimizations
+include vendor/cm/config/nuclearoptimizations/nuclearoptimizations.mk
+
 PRODUCT_BRAND ?= cyanogenmod
 
 # Boot animation include
@@ -80,7 +83,6 @@ PRODUCT_COPY_FILES += \
 
 
 PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/common/lib/bluetooth.default.so:system/lib/hw/bluetooth.default.so \
     vendor/cm/prebuilt/common/app/NuclearWallpaper.apk:system/app/NuclearWallpaper.apk
 
 # Signature compatibility validation
@@ -215,7 +217,10 @@ PRODUCT_PACKAGES += \
 endif
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.sys.root_access=0
+    persist.sys.root_access=1
+
+# NRR Makefile
+include vendor/cm/config/nuclearoptimizations/nrr.mk
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/cm/overlay/common
 
@@ -288,7 +293,7 @@ endif
 # NuclearVersion
 ROM_VERSION = 6.0.1
 ROM_VERSION_STATUS = OFFICIAL
-ROM_VERSION_MAINTENANCE = 1.2.4
+ROM_VERSION_MAINTENANCE = 1.4.1
 ROM_POSTFIX := $(shell date +"%Y%m%d-%H%M")
 
 NUCLEAR_VERSION := NucleaRomReborn-V$(ROM_VERSION_MAINTENANCE)-$(ROM_VERSION_STATUS)[$(ROM_VERSION)]-$(ROM_POSTFIX)
