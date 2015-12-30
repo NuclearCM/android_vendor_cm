@@ -4,6 +4,11 @@ $(call inherit-product, vendor/cm/config/common.mk)
 # Include CM audio files
 include vendor/cm/config/cm_audio.mk
 
+# Optional CM packages
+PRODUCT_PACKAGES += \
+    SoundRecorder \
+    Screencast
+
 # Extra tools in CM
 PRODUCT_PACKAGES += \
     7z \
