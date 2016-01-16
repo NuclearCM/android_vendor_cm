@@ -145,7 +145,8 @@ PRODUCT_PACKAGES += \
     CMFileManager \
     LockClock \
     CMSettingsProvider \
-    ExactCalculator
+    ExactCalculator \
+    SnapdragonCamera
 
 # CM Platform Library
 PRODUCT_PACKAGES += \
