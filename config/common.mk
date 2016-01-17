@@ -139,7 +139,8 @@ PRODUCT_PACKAGES += \
     CMFileManager \
     LockClock \
     CMSettingsProvider \
-    ExactCalculator
+    ExactCalculator \
+    Snap
 
 # CM Platform Library
 PRODUCT_PACKAGES += \
