@@ -56,14 +56,6 @@ PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/bin/blacklist:system/addon.d/blacklist
 endif
 
-# Camera Next
-PRODUCT_COPY_FILES += \
-	vendor/cm/prebuilt/common/addon.d/90-CamSettings.sh:system/addon.d/90-CamSettings.sh \
-	vendor/cm/prebuilt/common/app/CameraNextMod.apk:system/priv-app/CameraNextMod.apk \
-	vendor/cm/prebuilt/common/etc/media_profiles.xml:system/vendor/etc/media_profiles.xml \
-	vendor/cm/prebuilt/common/lib/libjni_mosaic.so:system/lib/libjni_mosaic.so 
-
-
 # MaxAudio
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/addon.d/90-Maxxaudio.sh:system/addon.d/90-Maxxaudio.sh \
@@ -134,7 +126,7 @@ PRODUCT_PACKAGES += \
 
 # Custom CM packages
 PRODUCT_PACKAGES += \
-    Launcher3 \
+    Eleven \
     Trebuchet \
     CMFileManager \
     LockClock \
