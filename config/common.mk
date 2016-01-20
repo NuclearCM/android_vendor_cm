@@ -128,6 +128,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Eleven \
     Trebuchet \
+    CMWallpapers \
     CMFileManager \
     LockClock \
     CMSettingsProvider \
@@ -211,7 +212,7 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/cm/overlay/common
 # NuclearVersion
 ROM_VERSION = 6.0.1
 ROM_VERSION_STATUS = OFFICIAL
-ROM_VERSION_MAINTENANCE = 3.0
+ROM_VERSION_MAINTENANCE = 3.1.2
 ROM_POSTFIX := $(shell date +"%Y%m%d-%H%M")
 
 NUCLEAR_VERSION := NucleaRomReborn-V$(ROM_VERSION_MAINTENANCE)-$(ROM_VERSION_STATUS)[$(ROM_VERSION)]-$(ROM_POSTFIX)
