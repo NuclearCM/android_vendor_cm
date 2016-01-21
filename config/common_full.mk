@@ -7,6 +7,7 @@ include vendor/cm/config/cm_audio.mk
 # Optional CM packages
 PRODUCT_PACKAGES += \
     SoundRecorder \
+    LiveWallpapersPicker \
     Screencast
 
 # Extra tools in CM
