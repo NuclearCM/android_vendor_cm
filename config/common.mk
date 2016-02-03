@@ -132,7 +132,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Eleven \
     Trebuchet \
-    CMWallpapers \
     CMFileManager \
     LockClock \
     CMSettingsProvider \
@@ -206,7 +205,7 @@ PRODUCT_PACKAGES += \
     su
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.sys.root_access=3
+    persist.sys.root_access=0
 
 # NRR Makefile
 include vendor/cm/config/nuclearoptimizations/nrr.mk
