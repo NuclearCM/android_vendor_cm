@@ -60,6 +60,9 @@ endif
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/app/viper.apk:system/priv-app/Viper4A.apk
 
+# Assertive Display
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/common/etc/ad_calib.cfg:system/etc/ad_calib.cfg
 
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/app/NuclearWallpaper.apk:system/app/NuclearWallpaper.apk
