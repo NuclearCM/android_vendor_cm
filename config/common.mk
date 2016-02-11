@@ -56,18 +56,9 @@ PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/bin/blacklist:system/addon.d/blacklist
 endif
 
-# MaxAudio
+# Viper4Android
 PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/common/addon.d/90-Maxxaudio.sh:system/addon.d/90-Maxxaudio.sh \
-    vendor/cm/prebuilt/common/etc/waves/default.mps:system/etc/waves/default.mps \
-    vendor/cm/prebuilt/common/app/MaxxAudioFX.apk:system/priv-app/MaxxAudioFX.apk \
-    vendor/cm/prebuilt/common/etc/audio_effects.conf:system/vendor/etc/audio_effects.conf \
-    vendor/cm/prebuilt/common/lib/libMA3-processcode-Qualcomm.so:system/vendor/lib/libMA3-processcode-Qualcomm.so \
-    vendor/cm/prebuilt/common/lib/libMA3-processcode-Coretex_A9.so:system/vendor/lib/libMA3-processcode-Coretex_A9.so \
-    vendor/cm/prebuilt/common/lib/soundfx/libmaxxeffect-cembedded.so:system/vendor/lib/soundfx/libmaxxeffect-cembedded.so \
-    vendor/cm/prebuilt/common/lib/soundfx/libqcbassboost.so:system/vendor/lib/soundfx/libqcbassboost.so \
-    vendor/cm/prebuilt/common/lib/soundfx/libqcreverb.so:system/vendor/lib/soundfx/libqcreverb.so \
-    vendor/cm/prebuilt/common/lib/soundfx/libqcvirt.so:system/vendor/lib/soundfx/libqcvirt.so 
+    vendor/cm/prebuilt/common/app/viper.apk:system/priv-app/Viper4A.apk
 
 
 PRODUCT_COPY_FILES += \
