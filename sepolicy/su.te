@@ -63,4 +63,3 @@ type superuser_device, file_type, mlstrustedobject;
   allow system_app superuser_device:dir { create rw_dir_perms setattr unlink };
 
   allow kernel sudaemon:fd { use };
-')
