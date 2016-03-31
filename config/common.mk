@@ -129,7 +129,8 @@ PRODUCT_PACKAGES += \
     LockClock \
     CMSettingsProvider \
     ExactCalculator \
-    Snap
+    Snap \
+    LiveLockScreenService
 
 # Exchange support
 PRODUCT_PACKAGES += \
