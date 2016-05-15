@@ -131,7 +131,8 @@ PRODUCT_PACKAGES += \
     ExactCalculator \
     Snap \
     LiveLockScreenService \
-    WeatherProvider
+    WeatherProvider \
+    DataUsageProvider
 
 # Exchange support
 PRODUCT_PACKAGES += \
